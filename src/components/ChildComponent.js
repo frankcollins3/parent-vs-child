@@ -6,7 +6,7 @@ class ChildComponent extends Component {
         super()
         this.state = {
             cash: props.cash,
-            tools: 'Lawnmower'
+            tools: 'Leafblower'
         }
     }
 
@@ -19,7 +19,7 @@ class ChildComponent extends Component {
         return (
             <div>
                 <h1>Child Component</h1>
-                <p>Money from Parent: {this.props.cash}</p>
+                <p>Inherited Monies: {this.props.cash}</p>
                 <p>Cash: {this.state.cash}</p>
                 <button onClick={this.earnMoney}>Earn Money</button>
             </div>
